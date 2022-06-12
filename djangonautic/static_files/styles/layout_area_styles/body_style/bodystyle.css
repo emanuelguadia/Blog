@@ -1,0 +1,10 @@
+html body{
+ margin:0;
+  padding:0;
+  height:100vh;
+  font-style: italic;
+  color: darkcyan;
+  background-image: linear-gradient(45deg,lightblue,white);
+}
+
+

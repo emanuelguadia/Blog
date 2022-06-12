@@ -1,0 +1,26 @@
+.layout {
+    margin:0;
+    padding:0;
+	height: 100vh;
+	width:100wh;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 15% 80% 5%;
+}
+.layout,.layout>*{
+    border: 1px solid black;
+}
+.layout>.header_style,footer{
+    grid-column: span 6;
+
+}
+.layout>main{
+    grid-column: span 5;
+}
+.layout>main > h1 >a > img{
+    height:10%;
+    width:10%;
+    padding: 3px 0;
+    border: 1px solid black;
+}

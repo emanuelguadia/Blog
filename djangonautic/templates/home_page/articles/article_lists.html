@@ -1,0 +1,21 @@
+
+{% extends 'layout_area/layout/base_layout.html'%}
+{% block content  %}
+<div class="article_lists">
+    <span>I AM ARTICLE LIST</span>
+    <br>
+    {% for  article in  articles  %}
+    <div class="one_article">
+    <h2> <a href="{% url 'detail'  slug=article.slug %}">{{article.title}}<a></h2>
+    <br>
+       <img>The article thumb is:  {{article.thumb.url}} </img>
+    <br>
+      <span>{{article.body}}</span>
+    <br>
+      <span>{{article.date}}</span>
+    <br>
+    </div>
+    <hr>
+    {% endfor %}
+</div>
+{% endblock %}

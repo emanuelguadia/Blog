@@ -1,0 +1,9 @@
+  .layout .one_article .article_lists{
+    margin:0;
+    padding:0;
+    height:100vh;
+	display:flex;
+    flex-direction: column;
+    overflow: auto;
+
+}

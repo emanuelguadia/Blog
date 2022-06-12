@@ -1,0 +1,9 @@
+.article_detail> .article{
+  margin:0;
+  padding:0;
+  display:flex;
+  height:30vh;
+  width:30wx;
+  background-color:snow;
+
+}

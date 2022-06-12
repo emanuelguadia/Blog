@@ -1,0 +1,17 @@
+{% extends 'layout_area/layout/base_layout.html'%}
+{% block content  %}
+<div class= "article_detail">
+    <div class= "article">
+    <span>I AM ARTICLE DETAIL PAGE </span>
+     <br>
+     <img src="{{article.thumb.url}}" >The article thumb is:{{article.thumb.url}}</img>
+    <br>
+     <span>The article title is:  {{article.title}} </span>
+      <br>
+     <span>The article  body: {{article.body}} </span>
+    <br>
+     <span>The article edite date:{{article.date}} </span>
+    <br>
+</div>
+</div>
+{% endblock %}

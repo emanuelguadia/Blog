@@ -1,0 +1,12 @@
+{% extends 'layout_area/layout/base_layout.html'%}
+{% block content  %}
+<div class="login">
+    <span>I AM ACCOUNT LOGIN PAGE</span>
+   <h3> login </h3>
+ <form class="login_form" action="/accounts/login_view/" method="post">
+     {% csrf_token %}
+        {{form}}
+        <input type="submit" value="login">
+    </form>
+</div>
+{% endblock %}

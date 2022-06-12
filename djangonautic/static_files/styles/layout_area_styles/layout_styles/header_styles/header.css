@@ -1,0 +1,21 @@
+.layout .header_style{
+   height: 100%;
+   width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.layout .header_style>h1{
+color: black;
+text-align: center;
+
+}
+.layout .header_style>img{
+    height:10%;
+    width:10%;
+    padding: 3px 0;
+    border: 1px solid black;
+    position: fixed;
+    left: 10px;
+
+}

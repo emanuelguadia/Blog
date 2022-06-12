@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Djangonautic_Project </title>
+    <link rel="stylesheet" href="{% static 'styles/layout_area_styles/body_style/bodystyle.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/layout_area_styles/layout_styles/layout.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/layout_area_styles/layout_styles/header_styles/header.css' %}">
+<!--    <link rel="stylesheet" href="{% static 'styles/layout_area_styles/layout_styles/main_styles/main_styles.css' %}">-->
+    <link rel="stylesheet" href="{% static 'styles/layout_area_styles/layout_styles/footer_styles/footer_styles.css' %}">
+
+    <link rel="stylesheet" href="{% static 'styles/articles_style/article_lists_style/article_lists.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/accounts_style/accounts_singup_style/singup_style.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/accounts_style/accounts_login_style/login_style.css' %}">
+
+</head>
+<body >
+ <div class="layout">
+	<header class="header_style">
+       <h1>This Is My Blog</h1>
+        <img src="{% static '/images/Thumbnails2/Django_updated_like_computer.png' %}" alt="PICTURE">
+    </header>
+     <aside>
+         <h3><a href="% url 'admin/admin_site' %}">Admin</a></h3>
+         <br>
+         <h3><a href="{% url 'accounts:signup_view' %}" >Accounts</a></h3>
+         <br>
+         <h3><a href="{% url 'list' %}">Articles</a></h3>
+         <br>
+     </aside>
+     <main style="overflow: auto;">
+         <h1> <a href="{% url 'list' %}"><img src="{% static '/images/Thumbnails2/django_the_7_best_django_online_course.png' %}">
+
+             <br>ALL LISTS </a><h1/>
+        {% block content  %}
+        {% endblock %}
+     </main>
+     <footer>
+         <h2>django-course-training
+         </h2>
+     </footer>
+ </div>
+</body>
+</html>
